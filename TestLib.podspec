@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestLib"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of TestLib."
+  s.version      = "1.0.1"
+  s.summary      = "TestLib of asialee."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                   * Detail about HYFristModule framework.
                    DESC
 
   s.homepage     = "https://github.com/asialee/cocoaPodTest"
@@ -38,7 +39,12 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      =  s.license = {
+                                  :type => 'Copyright',
+                                  :text => <<-LICENSE
+                                  Alibaba-Inc copyright
+                                  LICENSE
+                                }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -76,7 +82,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/asialee/cocoaPodTest.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/asialee/cocoaPodTest.git", :tag => s.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

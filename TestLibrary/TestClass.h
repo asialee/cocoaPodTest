@@ -10,4 +10,5 @@
 
 @interface TestClass : NSObject
 
+- (void) printLog;
 @end

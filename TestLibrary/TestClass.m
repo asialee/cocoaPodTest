@@ -10,4 +10,7 @@
 
 @implementation TestClass
 
+-(void) printLog {
+    NSLog(@"TEST LOG");
+}
 @end
